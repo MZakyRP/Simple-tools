@@ -1,0 +1,79 @@
+:root {
+  --border-radius: 0px;
+}
+
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+section div {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+section div.border-input {
+  border: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section div img {
+  flex: 0 0 180px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 5px solid black;
+  border-radius: var(--border-radius);
+}
+
+section div:nth-child(2), div.border-input:nth-child(1) {
+  order: 2;
+}
+
+.border-options__buttons {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: .5rem;
+}
+
+.border-options__buttons button {
+  padding: .5rem;
+  border: 1px solid black;
+  background-color: rgb(240, 240, 240);
+}
