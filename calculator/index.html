@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+  <main>
+    <section class="calculator">
+      <div class="calculator-screen">
+        <input id="leftOperand" type="text" maxlength="0" readonly>
+        <input id="operator" type="text" maxlength="0" readonly>
+        <input id="rightOperand" type="text" maxlength="0" readonly>
+      </div>
+      <ul class="calculator-buttons__numbers">
+        <li data-key="7">7</li>
+        <li data-key="8">8</li>
+        <li data-key="9">9</li>
+        <li data-key="/">/</li>
+        <li data-key="Backspace"> _< </li>
+
+        <li data-key="4">4</li>
+        <li data-key="5">5</li>
+        <li data-key="6">6</li>
+        <li data-key="x">&#215</li>
+        <li data-key="^">^</li>
+
+        <li data-key="1">1</li>
+        <li data-key="2">2</li>
+        <li data-key="3">3</li>
+        <li data-key="-">-</li>
+        <li></li>
+
+        <li></li>
+        <li data-key="0">0</li>
+        <li></li>
+        <li data-key="+">+</li>
+        <li data-key="=">=</li>
+      </ul>
+    </section>
+  </main>
+  <script async src="index.js"></script>
+</body>
+
+</html>
