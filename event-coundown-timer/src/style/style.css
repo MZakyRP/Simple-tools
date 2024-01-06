@@ -1,0 +1,16 @@
+:root {
+  transition: 1s all ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#theme-light {
+  --primary: #f5f5f5;
+  --secondary: #006bf7;
+  --shadow: #aaa;
+}
+
+#theme-dark {
+  --primary: #1e1e1e;
+  --secondary: #090983;
+  --shadow: #ccc;
+}
