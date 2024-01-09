@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON2CSV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JSON2CSV</h1>
+  </header>
+  <main>
+    <div class="file-upload">
+      <h3>Upload your JSON file, or paste it to the input field</h3>
+      <input type="file" id="file-upload-json" accept=".json">
+    </div>
+    <textarea id="json-area" placeholder="Input your JSON here..."></textarea>
+    <div class="buttons">
+      <button id="convert">Convert</button>
+      <button id="clear">Clear</button>
+    </div>
+    <textarea id="csv-area" readonly></textarea>
+    <div class="file-save">
+      <h3>File will be downloaded to your default Download directory</h3>
+      <input type="text" id="file-save-name" placeholder="Enter file name...">
+      <button id="save">Download</button>
+    </div>
+  </main>
+  <script async src="index.js"></script>
+</body>
+</html>

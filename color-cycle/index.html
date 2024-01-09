@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Cycle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Color Cycle</h1>
+  </header>
+  <main>
+    <h2>Let's color this box!</h2>
+    <div class="color-box"></div>
+    <button id="toggler">Start</button>
+    <section class="inputs">
+      <div class="inputs-wrapper">
+        <label for="color-input1">Choose starting color: </label>
+        <div class="color-inputs-wrapper">
+          <input type="text" id="color-input1" placeholder="ff" maxlength="2">
+          <input type="text" id="color-input2" placeholder="ff" maxlength="2">
+          <input type="text" id="color-input3" placeholder="ff" maxlength="2">
+        </div>
+      </div>
+      <div class="inputs-wrapper">
+        <label for="increment-input">Number of increment per cycle:</label>
+        <div class="color-inputs-wrapper">
+          <input type="number" id="increment-input1" placeholder="20">
+          <input type="number" id="increment-input2" placeholder="20">
+          <input type="number" id="increment-input3" placeholder="20">
+        </div>
+      </div>
+      <div class="inputs-wrapper">
+        <label for="interval-input">Interval between cycle(seconds):</label>
+        <input type="number" id="interval-input" max="10" placeholder=".25">
+      </div>
+      <div class="inputs-wrapper">
+        <label for="color-encoding">Choose color mode:</label>
+        <p>(no implementation yet)</p>
+        <select id="color-encoding" disabled>
+          <option value="hex">HEX</option>
+          <option value="rgb">RGB</option>
+          <option value="hsl">HSL</option>
+        </select>
+      </div>
+    </section>
+  </main>
+  <script async src="index.js"></script>
+</body>
+
+</html>
