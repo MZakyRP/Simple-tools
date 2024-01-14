@@ -1,0 +1,51 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.ingredients-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+h3 {
+  opacity: .5;
+}
+
+img {
+  width: 280px;
+}

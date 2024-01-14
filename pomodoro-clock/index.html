@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pomodoro Clock</h1>
+  </header>
+  <main>
+    <section>
+      <div>
+        <h2>Working session count :</h2>
+        <p id="working-session-count">0</p>
+      </div>
+      <div>
+        <h2>Break session count :</h2>
+        <p id="break-session-count">0</p>
+      </div>
+    </section>
+    <section>
+      <div class="session-box">
+        <h3 id="current-session">Working Session</h3>
+        <h2 id="timer">25:00</h2>
+      </div>
+    </section>
+    <section>
+      <button id="trigger">Play</button>
+      <button id="reset">Reset</button>
+      <label for="long-break">Use long break? (start on every 4th break)</label>
+      <input type="checkbox" id="long-break">
+    </section>
+  </main>
+  <audio src="assets/mixkit-digital-clock-digital-alarm-buzzer-992.wav" id="alarm"></audio>
+  <script async src="index.js"></script>
+</body>
+</html>

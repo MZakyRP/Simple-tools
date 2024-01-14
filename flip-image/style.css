@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+main {
+  background-color: #aaa;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+#box {
+  clip-path: polygon(0% 25%, 15% 25%, 15% 0%, 30% 25%, 100% 25%, 100% 100%, 0% 100%);
+  padding: .5rem;
+  padding-top: 1.5rem;
+  background-color: red;
+  position: fixed;
+  visibility: hidden;
+}
+
+#box button {
+  padding-inline: .5rem;
+}
