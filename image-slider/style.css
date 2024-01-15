@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+div {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+}
+
+img {
+  height: 240px;
+  min-width: 400px;
+  object-fit: cover;
+}

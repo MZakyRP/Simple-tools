@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+button {
+  padding: .5rem;
+}
+
+#timer {
+  font-size: 3rem;
+}
+
+#laps {
+  border: 2px solid black;
+  min-height: 100px;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.milis {
+  font-size: .5em;
+  opacity: .5;
+}
