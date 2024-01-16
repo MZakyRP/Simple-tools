@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d30f7;
+  color: white;
+  text-align: center;
+  padding: .5rem;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+#input-area {
+  max-width: 800px;
+  width: 100%;
+  min-height: 300px;
+}
+
+#translate {
+  padding: .5rem;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+}
+
+th, td {
+  padding: 1rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.5rem;
+}
